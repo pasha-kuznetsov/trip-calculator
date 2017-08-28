@@ -1,3 +1,6 @@
+**Note:** If you are anxious to just launch it, please see **Develop** closer to the end
+of this document.
+
 ## Intro
 
 This app calculates the expenses for a group of students who like to go on road trips.
@@ -120,7 +123,7 @@ For example, here's what you should expect in case if you forgot to include the 
         "path": "/api/v1/trips"
     }
 
-## Development
+## Develop
 
 ### Setup
 
@@ -149,7 +152,9 @@ Use the below command to start the app and create the following local endpoints:
 * Swagger UI [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 * Swagger JSON [http://localhost:8080/api-docs/v1](http://localhost:8080/api-docs/v1)
 
-### Deploying to Amazon AWS Elastic Beanstalk
+## Deploy
+
+### JAR
 
 The following command builds the JAR suitable for Amazon AWS Elastic Beanstalk deployment:
 
@@ -157,3 +162,8 @@ The following command builds the JAR suitable for Amazon AWS Elastic Beanstalk d
 
 After Gradle finishes building the application,
 the JAR will be located in `build/libs/TripCalculator-1.0-SNAPSHOT.jar`.
+
+### Amazon AWS Elastic Beanstalk
+
+Elastic Beanstalk Deployment is out of scope for this document, but please feel free
+to explore `terraform/env/template` and `terraform/apps/template`.
